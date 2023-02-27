@@ -1,10 +1,10 @@
 let resumeData = {
     // "imagebaseurl":"https://rbhatia46.github.io/",
     "name": "Airton Domiciano",
-    // "role": "Developer Full-Stack! ",
+    "role": "Sou um programador que gosta de ter novas experiências!",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
-    "roleDescription": "I like dabbling in various parts of frontend development and like to learn about new technologies, write technical articles or simply play games in my free time.",
+    "roleDescription": "amo ter a possibilidade de encarar novos desafios no rumo da programação.",
     // "roleDescription": "",
     "socialLinks":[
         {
@@ -49,6 +49,9 @@ let resumeData = {
     "skills":[
       {
         "skillname":"HTML5"
+      },
+      {
+        "skillname":"Angular"
       },
       {
         "skillname":"CSS"
