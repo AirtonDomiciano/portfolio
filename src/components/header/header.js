@@ -1,9 +1,7 @@
 import React from "react";
-import TypeWrite from "../../util/typeWrite";
-import "./header.css";
 
 export function Header(props) {
-  const { name, roleDescription, role, socialLinks } = props.resumeData;
+  const { name, role, socialLinks } = props.resumeData;
   return (
     <>
       <header id="home">
@@ -50,38 +48,26 @@ export function Header(props) {
 
         <div className="row banner">
           <div className="banner-text">
-            <h2 className="my-name">{name}</h2>
+            <div className="col-sm-12">
+              <h3 className="my-name">{name}</h3>
+              <h2> Sou desenvolvedor Front-End</h2>
 
-            <h3 className="responsive-headline">
-              <TypeWrite
-                text={"Sou Desenvolvedor Front-End"}
-                isTime="0"
-                time="200"
-              />
-            </h3>
-            <h2
-              style={{ color: "#fff", fontFamily: "sans-serif " }}
-              className="responsive-headline-sub"
-            >
-              {role}
-            </h2>
-            {/* <h3 style={{ color: "#fff", fontFamily: "sans-serif " }}>
-              <br></br>
-             <TypeWrite text={roleDescription} isTime="1000" />
-            </h3> */}
-            <hr />
-            <ul className="social">
-              {socialLinks &&
-                socialLinks.map((item) => {
-                  return (
-                    <li key={item.name}>
-                      <a href={item.url} target="_blank">
-                        <i className={item.className}></i>
-                      </a>
-                    </li>
-                  );
-                })}
-            </ul>
+              <hr />
+            </div>
+            <div className="col-sm-12">
+              <ul className="social">
+                {socialLinks &&
+                  socialLinks.map((item) => {
+                    return (
+                      <li key={item.name}>
+                        <a href={item.url} target="_blank" rel="noreferrer">
+                          <i className={item.className}></i>
+                        </a>
+                      </li>
+                    );
+                  })}
+              </ul>
+            </div>
           </div>
         </div>
 
