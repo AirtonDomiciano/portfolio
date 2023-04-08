@@ -48,13 +48,13 @@ export function Header(props) {
 
         <div className="row banner">
           <div className="banner-text">
-            <div className="col-sm-12">
-              <h3 className="my-name">{name}</h3>
-              <h2> Sou desenvolvedor Front-End</h2>
+            <div className="">
+              <h2>{name}</h2>
+              <h3> Sou desenvolvedor Front-End</h3>
 
               <hr />
             </div>
-            <div className="col-sm-12">
+            <div className="">
               <ul className="social">
                 {socialLinks &&
                   socialLinks.map((item) => {
