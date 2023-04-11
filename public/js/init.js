@@ -4,21 +4,23 @@
 /*
 -----------------------------------------------------------------------------------*/
 
-jQuery(document).ready(function async ($) {
-   console.log('Init JQuery')
+jQuery(document).ready(function async($) {
+  console.log("Init JQuery");
   /*---------------------------------------------------*/
 
-  function typeWrite(elemento, interval) {
-   // for (const elemento of elementArr) {
-      const textoArray = elemento.innerHTML.split("");
-      elemento.innerHTML = " ";
-      textoArray.forEach(function (letra, i) {
-        setTimeout(function () {
-          elemento.innerHTML += letra;
-        }, interval * i);
-      });
-   // }
-  }
+  let palavras = ["Back-End", "Front-End", "Design Responsivo", "Mobile"];
+  let inicio = 0;
+  let intervalo = 1500;
+  $("#souDesenvolvedor").text(palavras[inicio++]);
+  setInterval(function () {}, intervalo);
+  setInterval(function () {
+    $("#souDesenvolvedor").slideUp(function () {
+      if (inicio >= palavras.length) {
+        inicio = 0;
+      }
+      $(this).text(palavras[inicio++]).slideDown();
+    });
+  }, intervalo);
 
   /*----------------------------------------------------*/
   /* FitText Settings
@@ -29,7 +31,7 @@ jQuery(document).ready(function async ($) {
       minFontSize: "40px",
       maxFontSize: "60px",
     });
-   }, 0);
+  }, 0);
 
   /*----------------------------------------------------*/
   /* Smooth Scrolling

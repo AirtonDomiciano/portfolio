@@ -50,7 +50,11 @@ export function Header(props) {
           <div className="banner-text">
             <div className="">
               <h2>{name}</h2>
-              <h3> Sou desenvolvedor Front-End</h3>
+              <h3 className="frase">
+                <div className="frase">
+                  <p>Sou Desenvolvedor :</p> <span id="souDesenvolvedor"></span>
+                </div>
+              </h3>
 
               <hr />
             </div>

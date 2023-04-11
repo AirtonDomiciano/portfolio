@@ -51,7 +51,7 @@ header .banner {
    display: inline-block;
    vertical-align: middle;
    margin: 0 auto;
-   width: 85%;
+   width: 100%;
    /* padding-bottom: 30px; */
    text-align: left;
 }
@@ -108,7 +108,29 @@ header .social li {
 header .social li a { color: #fff; }
 header .social li a:hover { color: #F06000; }
 
+
+header .frase { 
+	width:100%; 
+	height:40px; 
+	float:left; 
+	font-size:1.2em; 
+	display:block;
+}
+header .frase p { 
+	float:left; 
+	font-family:'open_sanslight'; 
+}
+header .frase b { 
+	/* padding:0em 0.3em;  */
+	color:#F06000; 
+	text-transform:uppercase;
+	font-weight:bold; 
+	font-family:'open_sansbold';
+}
+
+
 /* scrolldown link */
+
 header .scrolldown a {
    position: absolute;
    bottom: 30px;
