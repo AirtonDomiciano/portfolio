@@ -104,6 +104,7 @@ jQuery(document).ready(function async($) {
     if (y > h * 0.2 && y < h && $(window).outerWidth() > 768) {
       nav.fadeOut("fast");
     } else {
+      // Remove back-ground do header ao usar o scroll
       if (y < h * 0.2) {
         nav.removeClass("opaque").fadeIn("fast");
       } else {
@@ -144,49 +145,4 @@ jQuery(document).ready(function async($) {
     randomize: false,
   });
 
-  /*----------------------------------------------------*/
-  /*	contact form
-  ------------------------------------------------------*/
-  //   TODO
-
-  $("form#contactForm button.submit").click(function () {
-    $("#image-loader").fadeIn();
-
-    var contactName = $("#contactForm #contactName").val();
-    var contactEmail = $("#contactForm #contactEmail").val();
-    var contactSubject = $("#contactForm #contactSubject").val();
-    var contactMessage = $("#contactForm #contactMessage").val();
-
-    var data =
-      "contactName=" +
-      contactName +
-      "&contactEmail=" +
-      contactEmail +
-      "&contactSubject=" +
-      contactSubject +
-      "&contactMessage=" +
-      contactMessage;
-
-    $.ajax({
-      type: "POST",
-      url: "inc/sendEmail.php",
-      data: data,
-      success: function (msg) {
-        // Message was sent
-        if (msg == "OK") {
-          $("#image-loader").fadeOut();
-          $("#message-warning").hide();
-          $("#contactForm").fadeOut();
-          $("#message-success").fadeIn();
-        }
-        // There was an error
-        else {
-          $("#image-loader").fadeOut();
-          $("#message-warning").html(msg);
-          $("#message-warning").fadeIn();
-        }
-      },
-    });
-    return false;
-  });
 });

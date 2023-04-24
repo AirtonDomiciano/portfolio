@@ -1,7 +1,7 @@
 import React from "react";
 
 export function Header(props) {
-  const { name, role, socialLinks } = props.resumeData;
+  const { name,  socialLinks } = props.resumeData;
   return (
     <>
       <header id="home">
@@ -45,7 +45,6 @@ export function Header(props) {
             </li>
           </ul>
         </nav>
-
         <div className="row banner">
           <div className="banner-text">
             <div className="">

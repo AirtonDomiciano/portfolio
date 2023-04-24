@@ -1,10 +1,9 @@
 let resumeData = {
-    // "imagebaseurl":"https://rbhatia46.github.io/",
+    // "imagebaseurl":"https://AirtonDomiciano.github.io/",
     "name": "Airton Domiciano",
     "role": "Sou um programador que gosta de ter novas experiências!",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
-    "roleDescription": "amo ter a possibilidade de encarar novos desafios no rumo da programação.",
     // "roleDescription": "",
     "socialLinks":[
         {
@@ -17,13 +16,32 @@ let resumeData = {
           "url":"https://github.com/AirtonDomiciano",
           "className":"fa fa-github"
         },
-        // {
-        //   "name":"skype",
-        //   "url":"http://twitter.com/rbhatia46",
-        //   "className":"fa fa-twitter"
-        // }
       ],
-    "aboutme":"Eu sou um cara legal que tenho filhos uma esposa um coelho duas cadela e um Galo nanico",
+    "aboutme": [
+      {
+        "title":"Sobre Mim",
+        "context": "Meu nome é Airton Evandro Domiciano, sou de Pato Branco - PR, estou com 26 anos.",
+        "context2": ""
+      },
+      {
+        "title":"Expêriencias",
+        "context": "Tenho expêriencia em sistemas ERPS e ."
+      },
+      {
+        "title":"Futuro",
+        "context": "Quero me destacar e ser um ótimo programador dentro de uma empresa."
+      },
+      {
+        "title":"Vida",
+        "context": "Atualmente sou casado com uma mulher incrivel que sempre me levou aditante temos um filho de cabelos loiros e muito intêligente.",
+        "resume": "Moramos em Pato Branco em uma casa mais afastada da cidade. Assim podemos ter o nosso cantinho sossegado "
+      },
+      {
+        "title":"Lazer",
+        "context": "Gosto de jogar video game com meu filho sair com a familia."
+      },
+    ],
+    "roleDescription": "amo ter a possibilidade de encarar novos desafios no rumo da programação.",
     "address":"Brasil - PR - Pato Branco",
     "fone":"(55) - 46 9 99099164",
     "website":"",
