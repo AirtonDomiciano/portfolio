@@ -4,10 +4,14 @@
 /*
 -----------------------------------------------------------------------------------*/
 
+// eslint-disable-next-line no-undef
 jQuery(document).ready(function async($) {
   console.log("Init JQuery");
-  /*---------------------------------------------------*/
+  var sections = $("section");
+  var navigation_links = $("#nav-wrap a");
 
+  
+  /*---------------------------------------------------*/
   let palavras = ["Back-End", "Front-End", "Design Responsivo", "Mobile"];
   let inicio = 0;
   let intervalo = 1500;
@@ -18,13 +22,15 @@ jQuery(document).ready(function async($) {
       if (inicio >= palavras.length) {
         inicio = 0;
       }
-      $(this).text(palavras[inicio++]).slideDown();
+      $(this)
+        .text(palavras[inicio++])
+        .slideDown();
     });
   }, intervalo);
 
   /*----------------------------------------------------*/
   /* FitText Settings
------------------------------------------------------- */
+  /*----------------------------------------------------*/
 
   setTimeout(function () {
     $("h1.responsive-headline").fitText(1, {
@@ -35,13 +41,13 @@ jQuery(document).ready(function async($) {
 
   /*----------------------------------------------------*/
   /* Smooth Scrolling
------------------------------------------------------- */
+  /*----------------------------------------------------*/
 
-  $(".smoothscroll").on("click", function (e) {
+  $(document.body).on("click", ".smoothscroll", function async (e) {
+    console.log("smoothscroll click");
     e.preventDefault();
-
-    var target = this.hash,
-      $target = $(target);
+    var target = this.hash;
+    const $target = $(target);
 
     $("html, body")
       .stop()
@@ -57,34 +63,34 @@ jQuery(document).ready(function async($) {
       );
   });
 
+   /*----------------------------------------------------*/
+      /* Highlight the current section in the navigation bar
+      /*----------------------------------------------------*/
+      //TODO Ao clicar não muda a cor do inicio.
+      sections.waypoint({
+        handler: function (event, direction) {
+          var active_section;
+    
+          active_section = $(this);
+          if (direction === "up") {
+            active_section = active_section.prev();
+    
+          }
+    
+          var active_link = $(
+            '#nav-wrap a[href="#' + active_section.attr("id") + '"]'
+          );
+    
+          navigation_links.parent().removeClass("current");
+          active_link.parent().addClass("current");
+        },
+        offset: "35%",
+      });
+
   /*----------------------------------------------------*/
-  /* Highlight the current section in the navigation bar
-------------------------------------------------------*/
-
-  var sections = $("section");
-  var navigation_links = $("#nav-wrap a");
-
-  sections.waypoint({
-    handler: function (event, direction) {
-      var active_section;
-
-      active_section = $(this);
-      if (direction === "up") active_section = active_section.prev();
-
-      var active_link = $(
-        '#nav-wrap a[href="#' + active_section.attr("id") + '"]'
-      );
-
-      navigation_links.parent().removeClass("current");
-      active_link.parent().addClass("current");
-    },
-    offset: "35%",
-  });
-
+  /* Make sure that #header-background-image height is
+  /* equal to the browser height.
   /*----------------------------------------------------*/
-  /*	Make sure that #header-background-image height is
-/* equal to the browser height.
------------------------------------------------------- */
 
   $("header").css({ height: $(window).height() });
   $(window).on("resize", function () {
@@ -117,18 +123,18 @@ jQuery(document).ready(function async($) {
   /*	Modal Popup
 ------------------------------------------------------*/
 
-  $(".item-wrap a").magnificPopup({
-    type: "inline",
-    fixedContentPos: false,
-    removalDelay: 200,
-    showCloseBtn: false,
-    mainClass: "mfp-fade",
-  });
+  // $(".item-wrap a").magnificPopup({
+  //   type: "inline",
+  //   fixedContentPos: false,
+  //   removalDelay: 200,
+  //   showCloseBtn: false,
+  //   mainClass: "mfp-fade",
+  // });
 
-  $(document).on("click", ".popup-modal-dismiss", function (e) {
-    e.preventDefault();
-    $.magnificPopup.close();
-  });
+  // $(document).on("click", ".popup-modal-dismiss", function (e) {
+  //   e.preventDefault();
+  //   $.magnificPopup.close();
+  // });
 
   /*----------------------------------------------------*/
   /*	Flexslider
@@ -144,5 +150,4 @@ jQuery(document).ready(function async($) {
     animationSpeed: 600,
     randomize: false,
   });
-
 });

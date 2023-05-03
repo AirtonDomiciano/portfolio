@@ -58,6 +58,10 @@ header .banner {
   text-align: left;
 }
 
+header .row {
+  width: 1020px;
+}
+
 header .banner-text {
   width: 100%;
 }
@@ -231,6 +235,7 @@ ul#nav li a {
 ul#nav li a:active {
   background-color: transparent !important;
 }
+
 ul#nav li.current a {
   color: #f06000;
 }
