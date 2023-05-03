@@ -23,7 +23,7 @@
     margin-bottom: 12px;
   }
   #about p {
-    line-height: 15px;
+    /* line-height: 15px; */
     color: #7a7a7a;
     font-size: initial;
   }
@@ -53,8 +53,9 @@
   }
   
   #about .card {
-    width: 175px;
-    height: 50vh;
+    width: 250px;
+    /* height: 50vh; */
+    height: 100%;
     background-color: 333;
     border-radius: 10px;
     outline: 1px solid rgba(255, 255, 255, 0.5);
@@ -83,4 +84,14 @@
     left: 15px;
     bottom: 15px;
     font-size: 20px;
+  }
+
+  @media only screen and (min-width: 1600px) {
+    #about .card {
+      width: 300px;
+    }
+
+    #about p {
+      font-size: large;
+    }
   }
