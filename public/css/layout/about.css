@@ -3,95 +3,98 @@
 /* ------------------------------------------------------------------ */
 
 #about {
-    padding-top: 50px;
-    overflow: hidden;
-    height: 100vh;
-  }
-  
-  #about a,
-  #about a:visited {
-    color: #fff;
-  }
-  #about a:hover,
-  #about a:focus {
-    color: #11abb0;
-  }
-  
-  #about h2 {
-    font: 22px/30px "librebaskerville-regular", sans-serif;
-    color: rgb(205 113 34);
-    margin-bottom: 12px;
-  }
-  #about p {
-    /* line-height: 15px; */
-    color: #7a7a7a;
+  padding-top: 50px;
+  overflow: hidden;
+  height: 100vh;
+}
+
+#about a,
+#about a:visited {
+  color: #fff;
+}
+#about a:hover,
+#about a:focus {
+  color: #11abb0;
+}
+
+#about h2 {
+  font: 22px/30px "librebaskerville-regular", sans-serif;
+  color: rgb(205 113 34);
+  margin-bottom: 12px;
+}
+#about p {
+  color: #7a7a7a;
+  /*
+     line-height: 15px; 
     font-size: initial;
-  }
-  #about .profile-pic {
-    position: relative;
-    width: 120px;
-    height: 120px;
-    border-radius: 100%;
-  }
-  #about .main-col {
-    padding-right: 5%;
-  }
-  #about .download .button {
-    margin-top: 6px;
-    background: #444;
-  }
-  #about .download .button:hover {
-    background: #fff;
-    color: #2b2b2b;
-  }
-  #about .download .button i {
-    margin-right: 15px;
-    font-size: 20px;
-  }
-  #about .sobre-mim {
-    text-align: left
-  }
-  
+    */
+  font: 14px/1.3em;
+}
+#about .profile-pic {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+}
+#about .main-col {
+  padding-right: 5%;
+}
+#about .download .button {
+  margin-top: 6px;
+  background: #444;
+}
+#about .download .button:hover {
+  background: #fff;
+  color: #2b2b2b;
+}
+#about .download .button i {
+  margin-right: 15px;
+  font-size: 20px;
+}
+#about .sobre-mim {
+  text-align: left;
+}
+
+#about .card {
+  width: 250px;
+  /* height: 50vh; */
+  height: 100%;
+  background-color: 333;
+  border-radius: 10px;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  outline-offset: -8px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+#about .card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0.6;
+  transition: transform 0.75s;
+}
+
+#about .card:hover .card-image {
+  transform: scale(1.15);
+}
+
+#about .card-title {
+  position: absolute;
+  left: 15px;
+  bottom: 15px;
+  font-size: 20px;
+}
+
+@media only screen and (min-width: 1600px) {
   #about .card {
-    width: 250px;
-    /* height: 50vh; */
-    height: 100%;
-    background-color: 333;
-    border-radius: 10px;
-    outline: 1px solid rgba(255, 255, 255, 0.5);
-    outline-offset: -8px;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
-    position: relative;
-    overflow: hidden;
-  }
-  
-  #about .card-image {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: fill;
-    opacity: .6;
-    transition: transform .75s;
-  }
-  
-  #about .card:hover .card-image {
-    transform: scale(1.15);
-  }
-  
-  #about .card-title {
-    position: absolute;
-    left: 15px;
-    bottom: 15px;
-    font-size: 20px;
+    width: 300px;
   }
 
-  @media only screen and (min-width: 1600px) {
-    #about .card {
-      width: 300px;
-    }
-
-    #about p {
-      font-size: large;
-    }
+  #about p {
+    font-size: large;
   }
+}

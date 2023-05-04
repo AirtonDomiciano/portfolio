@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------------
+/* g. Testimonials
+/* ------------------------------------------------------------------ */
+
+#certificates {
+  padding-top: 50px;
+  overflow: hidden;
+  height: 100vh;
+  /* background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
+    background-size: cover !important;
+    -webkit-background-size: cover !important;
+    background-attachment: fixed;
+  
+    position: relative;
+    min-height: 200px;
+    width: 100%;
+    overflow: hidden; */
+}
+#certificates .text-container {
+  padding-top: 96px;
+  padding-bottom: 66px;
+}
+#certificates h1 {
+  font: 18px/24px "opensans-bold", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #fff;
+}
+#certificates h1 span {
+  display: none;
+}
+#certificates .header-col {
+  padding-top: 9px;
+}
+#certificates .header-col h1:before {
+  font-family: "FontAwesome";
+  content: "\f10d";
+  padding-right: 10px;
+  font-size: 72px;
+  line-height: 72px;
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+
+/*	Blockquotes */
+#certificates blockquote {
+  margin: 0 0px 30px 0px;
+  padding-left: 0;
+  position: relative;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
+}
+#certificates blockquote:before {
+  content: none;
+}
+#certificates blockquote p {
+  font-family: "librebaskerville-italic", serif;
+  padding: 0;
+  font-size: 24px;
+  line-height: 48px;
+  color: #fff;
+}
+#certificates blockquote cite {
+  display: block;
+  font-size: 12px;
+  font-style: normal;
+  line-height: 18px;
+  color: #fff;
+}
+#certificates blockquote cite:before {
+  content: "\2014 \0020";
+}
+#certificates blockquote cite a,
+#certificates blockquote cite a:visited {
+  color: #8b9798;
+  border: none;
+}

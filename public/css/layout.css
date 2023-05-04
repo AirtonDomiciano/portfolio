@@ -51,17 +51,19 @@ header:before {
 }
 header .banner {
   display: inline-block;
-  vertical-align: middle;
-  margin: 0 auto;
-  width: 100%;
-  /* padding-bottom: 30px; */
   text-align: left;
+  /* vertical-align: middle; */
+  /* margin: 0 auto; */
+  /* width: 100%; */
+  /* padding-bottom: 30px; */
 }
 
 header .row {
   width: 1020px;
 }
-
+header .type-slideUp {
+  
+}
 header .banner-text {
   width: 100%;
 }
@@ -73,7 +75,7 @@ header .banner-text h1 {
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
 header .banner-text h2 {
-  font: 26px/1.9em "librebaskerville-regular", serif;
+  font: 30px/1.9em "librebaskerville-regular", serif;
   color: #f06000;
   margin: 0 auto;
   width: 100%;
@@ -89,7 +91,7 @@ header .banner-text h3 {
 
 header .banner-text h3 span,
 header .banner-text h3 a {
-  color: #fff;
+  color: #f06000;;
 }
 header .banner-text hr {
   width: 60%;
@@ -217,6 +219,7 @@ ul#nav li a {
   /* 8px padding top + 8px padding bottom + 32px line-height = 48px */
 
   display: inline-block;
+  color: #fff;
   padding: 8px 11px;
   line-height: 32px;
   text-decoration: none;
@@ -234,10 +237,11 @@ ul#nav li a {
 
 ul#nav li a:active {
   background-color: transparent !important;
+  color: #e27b37 !important;
 }
 
 ul#nav li.current a {
-  color: #f06000;
+  color: #f06000 !important;
 }
 
 /*----------------------------------------------*/
@@ -486,81 +490,6 @@ ul#nav li.current a {
 #call-to-action p span {
   font-family: "opensans-semibold", sans-serif;
   color: #d8d8d8;
-}
-
-/* ------------------------------------------------------------------
-/* g. Testimonials
-/* ------------------------------------------------------------------ */
-
-#testimonials {
-  background: #1f1f1f url(../images/testimonials-bg.jpg) no-repeat center center;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
-  background-attachment: fixed;
-
-  position: relative;
-  min-height: 200px;
-  width: 100%;
-  overflow: hidden;
-}
-#testimonials .text-container {
-  padding-top: 96px;
-  padding-bottom: 66px;
-}
-#testimonials h1 {
-  font: 18px/24px "opensans-bold", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  color: #fff;
-}
-#testimonials h1 span {
-  display: none;
-}
-#testimonials .header-col {
-  padding-top: 9px;
-}
-#testimonials .header-col h1:before {
-  font-family: "FontAwesome";
-  content: "\f10d";
-  padding-right: 10px;
-  font-size: 72px;
-  line-height: 72px;
-  text-align: left;
-  float: left;
-  color: #fff;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-  margin: 0 0px 30px 0px;
-  padding-left: 0;
-  position: relative;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, 1);
-}
-#testimonials blockquote:before {
-  content: none;
-}
-#testimonials blockquote p {
-  font-family: "librebaskerville-italic", serif;
-  padding: 0;
-  font-size: 24px;
-  line-height: 48px;
-  color: #fff;
-}
-#testimonials blockquote cite {
-  display: block;
-  font-size: 12px;
-  font-style: normal;
-  line-height: 18px;
-  color: #fff;
-}
-#testimonials blockquote cite:before {
-  content: "\2014 \0020";
-}
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited {
-  color: #8b9798;
-  border: none;
 }
 
 /* Flex Slider

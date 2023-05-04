@@ -7,10 +7,7 @@
 // eslint-disable-next-line no-undef
 jQuery(document).ready(function async($) {
   console.log("Init JQuery");
-  var sections = $("section");
-  var navigation_links = $("#nav-wrap a");
 
-  
   /*---------------------------------------------------*/
   let palavras = ["Back-End", "Front-End", "Design Responsivo", "Mobile"];
   let inicio = 0;
@@ -43,7 +40,10 @@ jQuery(document).ready(function async($) {
   /* Smooth Scrolling
   /*----------------------------------------------------*/
 
-  $(document.body).on("click", ".smoothscroll", function async (e) {
+  var sections = $("section");
+  var navigation_links = $("#nav-wrap a");
+
+  $(document.body).on("click", ".smoothscroll", function async(e) {
     console.log("smoothscroll click");
     e.preventDefault();
     var target = this.hash;
@@ -51,41 +51,36 @@ jQuery(document).ready(function async($) {
 
     $("html, body")
       .stop()
-      .animate(
-        {
-          scrollTop: $target.offset().top,
-        },
-        800,
-        "swing",
-        function () {
-          window.location.hash = target;
-        }
-      );
+      .animate({ scrollTop: $target.offset().top }, 800, "swing", function () {
+        window.location.hash = target;
+      });
+
   });
 
-   /*----------------------------------------------------*/
-      /* Highlight the current section in the navigation bar
+  /*----------------------------------------------------*/
+  /* Highlight the current section in the navigation bar
       /*----------------------------------------------------*/
-      //TODO Ao clicar não muda a cor do inicio.
-      sections.waypoint({
-        handler: function (event, direction) {
-          var active_section;
-    
-          active_section = $(this);
-          if (direction === "up") {
-            active_section = active_section.prev();
-    
-          }
-    
-          var active_link = $(
-            '#nav-wrap a[href="#' + active_section.attr("id") + '"]'
-          );
-    
-          navigation_links.parent().removeClass("current");
-          active_link.parent().addClass("current");
-        },
-        offset: "35%",
-      });
+  //TODO Ao clicar não muda a cor do inicio.
+  
+
+  $("selector").waypoint({
+    handler: function async (event, direction) {
+      var active_section;
+
+      active_section = $(this);
+      if (direction === "up") {
+        active_section = active_section.prev();
+      }
+
+      var active_link = $(
+        '#nav-wrap a[href="#' + active_section.attr("id") + '"]'
+      );
+
+      navigation_links.parent().removeClass("current");
+      active_link.parent().addClass("current");
+    },
+    offset: "35%",
+  });
 
   /*----------------------------------------------------*/
   /* Make sure that #header-background-image height is

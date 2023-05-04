@@ -1,7 +1,7 @@
 import React from "react";
 
 export function Header(props) {
-  const { name,  socialLinks } = props.resumeData;
+  const { name, socialLinks } = props.resumeData;
   return (
     <>
       <header id="home">
@@ -24,17 +24,17 @@ export function Header(props) {
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#resume">
+              <a className="smoothscroll" href="#experience">
                 Expêriencias
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#portfolio">
+              <a className="smoothscroll" href="#work">
                 Trabalhos
               </a>
             </li>
             <li>
-              <a className="smoothscroll" href="#testimonials">
+              <a className="smoothscroll" href="#certificates">
                 Certificados
               </a>
             </li>
@@ -51,7 +51,8 @@ export function Header(props) {
               <h2>{name}</h2>
               <h3 className="frase">
                 <div className="frase">
-                  <p>Sou Desenvolvedor :</p> <span id="souDesenvolvedor"></span>
+                  <p>Sou Desenvolvedor :</p>
+                  <span id="souDesenvolvedor"></span>
                 </div>
               </h3>
 

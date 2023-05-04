@@ -25,7 +25,7 @@ export default function About(props) {
                       return (
                         <li key={item.title}>
                           <h2>{item.title}:</h2>
-                          <p>{item.context}</p>
+                          <p className="about-p">{item.context}</p>
                           {item.resume ? <p>{item.resume}</p> : '' }
                         </li>
                       );
