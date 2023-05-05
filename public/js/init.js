@@ -5,7 +5,7 @@
 -----------------------------------------------------------------------------------*/
 
 // eslint-disable-next-line no-undef
-jQuery(document).ready(function async($) {
+jQuery(document).ready(function ($) {
   console.log("Init JQuery");
 
   /*---------------------------------------------------*/
@@ -40,9 +40,6 @@ jQuery(document).ready(function async($) {
   /* Smooth Scrolling
   /*----------------------------------------------------*/
 
-  var sections = $("section");
-  var navigation_links = $("#nav-wrap a");
-
   $(document.body).on("click", ".smoothscroll", function async(e) {
     console.log("smoothscroll click");
     e.preventDefault();
@@ -54,17 +51,22 @@ jQuery(document).ready(function async($) {
       .animate({ scrollTop: $target.offset().top }, 800, "swing", function () {
         window.location.hash = target;
       });
-
   });
 
   /*----------------------------------------------------*/
   /* Highlight the current section in the navigation bar
-      /*----------------------------------------------------*/
-  //TODO Ao clicar não muda a cor do inicio.
-  
+  /*----------------------------------------------------*/
 
-  $("selector").waypoint({
-    handler: function async (event, direction) {
+  // TODO
+  $("section").waypoint(function async() {
+    alert("section");
+  });
+
+  var sections = $("section");
+  var navigation_links = $("#nav-wrap a");
+
+  sections.waypoint({
+    handler: function (event, direction) {
       var active_section;
 
       active_section = $(this);
