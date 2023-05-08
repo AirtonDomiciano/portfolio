@@ -3,9 +3,8 @@
 /* Init JS
 /*
 -----------------------------------------------------------------------------------*/
-
 // eslint-disable-next-line no-undef
-jQuery(document).ready(function ($) {
+jQuery(document).ready(function async($) {
   console.log("Init JQuery");
 
   /*---------------------------------------------------*/
@@ -57,11 +56,6 @@ jQuery(document).ready(function ($) {
   /* Highlight the current section in the navigation bar
   /*----------------------------------------------------*/
 
-  // TODO
-  $("section").waypoint(function async() {
-    alert("section");
-  });
-
   var sections = $("section");
   var navigation_links = $("#nav-wrap a");
 
@@ -74,9 +68,16 @@ jQuery(document).ready(function ($) {
         active_section = active_section.prev();
       }
 
-      var active_link = $(
-        '#nav-wrap a[href="#' + active_section.attr("id") + '"]'
-      );
+      var active_link = "";
+      if (active_section.attr("id") === undefined) {
+        var active_link = $(
+          '#nav-wrap a[href="#' + 'home' + '"]'
+        );
+      } else {
+        var active_link = $(
+          '#nav-wrap a[href="#' + active_section.attr("id") + '"]'
+        );
+      }
 
       navigation_links.parent().removeClass("current");
       active_link.parent().addClass("current");

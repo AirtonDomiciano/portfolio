@@ -13,6 +13,7 @@ export function Header(props) {
             Hide navigation
           </a>
           <ul id="nav" className="nav">
+          
             <li className="current">
               <a className="smoothscroll" href="#home">
                 Inicio
@@ -38,11 +39,11 @@ export function Header(props) {
                 Certificados
               </a>
             </li>
-            <li>
+            {/* <li>
               <a className="smoothscroll" href="#contact">
                 Contato
               </a>
-            </li>
+            </li> */}
           </ul>
         </nav>
         <div className="row banner">

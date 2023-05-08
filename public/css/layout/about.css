@@ -89,6 +89,28 @@
   font-size: 20px;
 }
 
+#about .scrolldown a {
+  /* position: absolute; */
+  bottom: 30px;
+  color: #fff;
+  display: block;
+  height: 42px;
+  width: 42px;
+  font-size: 42px;
+  line-height: 42px;
+  color: #fff;
+  border-radius: 100%;
+
+  /* -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; */
+}
+
+#about .scrolldown a:hover {
+  color: #f06000;
+}
+
 @media only screen and (min-width: 1600px) {
   #about .card {
     width: 300px;

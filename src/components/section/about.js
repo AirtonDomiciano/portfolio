@@ -34,6 +34,11 @@ export default function About(props) {
               </div>
             </div>
           </div>
+        <p className="scrolldown">
+          <a className="smoothscroll" href="#experience">
+            <i className="icon-down-circle"></i>
+          </a>
+        </p>
         </div>
       </div>
     </section>
