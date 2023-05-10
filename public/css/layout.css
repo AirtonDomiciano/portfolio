@@ -51,29 +51,37 @@ header:before {
 }
 header .banner {
   display: inline-block;
-  text-align: left;
-  /* vertical-align: middle; */
-  /* margin: 0 auto; */
-  /* width: 100%; */
-  /* padding-bottom: 30px; */
+  /* text-align: left; */
+  vertical-align: middle;
+  margin: 0 auto;
+  width: 100%;
+  padding-bottom: 30px;
 }
 
 header .row {
   width: 1020px;
 }
-header .type-slideUp {
-  
+
+header .text-slideUp {
+  font: 10px/1.9em "librebaskerville-regular", serif;
+  color: #f06000;
+  margin: 0 auto;
+  width: 100%;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 header .banner-text {
   width: 100%;
 }
+
 header .banner-text h1 {
-  font: 90px/1.1em "opensans-bold", sans-serif;
-  color: #fff;
+  font: 50px/1.9em "librebaskerville-regular", serif;
+  color: #f06000;
   letter-spacing: -2px;
   margin: 0 auto 18px auto;
   text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.8);
 }
+
 header .banner-text h2 {
   font: 30px/1.9em "librebaskerville-regular", serif;
   color: #f06000;
@@ -81,6 +89,7 @@ header .banner-text h2 {
   width: 100%;
   text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
 }
+
 header .banner-text h3 {
   font: 20px/1.9em "librebaskerville-regular", serif;
   color: #ffffff;
@@ -91,7 +100,7 @@ header .banner-text h3 {
 
 header .banner-text h3 span,
 header .banner-text h3 a {
-  color: #f06000;;
+  color: #f06000;
 }
 header .banner-text hr {
   width: 60%;
@@ -121,16 +130,19 @@ header .social li a:hover {
 }
 
 header .frase {
+  display: flex;
   width: 100%;
   height: 40px;
-  float: left;
   font-size: 1.2em;
   display: block;
+  /* float: left; */
 }
+
 header .frase p {
-  float: left;
+  /* float: left; */
   font-family: "open_sanslight";
 }
+
 header .frase b {
   /* padding:0em 0.3em;  */
   color: #f06000;

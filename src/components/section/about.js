@@ -24,7 +24,7 @@ export default function About(props) {
                     aboutme.map((item) => {
                       return (
                         <li key={item.title}>
-                          <h2>{item.title}:</h2>
+                          <h2>{item.title}</h2>
                           <p className="about-p">{item.context}</p>
                           {item.resume ? <p>{item.resume}</p> : '' }
                         </li>
@@ -34,11 +34,6 @@ export default function About(props) {
               </div>
             </div>
           </div>
-        <p className="scrolldown">
-          <a className="smoothscroll" href="#experience">
-            <i className="icon-down-circle"></i>
-          </a>
-        </p>
         </div>
       </div>
     </section>

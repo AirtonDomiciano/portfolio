@@ -13,7 +13,6 @@ export function Header(props) {
             Hide navigation
           </a>
           <ul id="nav" className="nav">
-          
             <li className="current">
               <a className="smoothscroll" href="#home">
                 Inicio
@@ -21,17 +20,17 @@ export function Header(props) {
             </li>
             <li>
               <a className="smoothscroll" href="#about">
-                Quem sou
+                Sobre
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#experience">
-                Expêriencias
+                Ensinos
               </a>
             </li>
             <li>
               <a className="smoothscroll" href="#work">
-                Trabalhos
+                Serviços
               </a>
             </li>
             <li>
@@ -49,14 +48,15 @@ export function Header(props) {
         <div className="row banner">
           <div className="banner-text">
             <div className="">
-              <h2>{name}</h2>
-              <h3 className="frase">
-                <div className="frase">
-                  <p>Sou Desenvolvedor :</p>
-                  <span id="souDesenvolvedor"></span>
-                </div>
-              </h3>
-
+              <h1>{name}</h1>
+            </div>
+            <div className="row">
+              <div className="frase">
+                <h3>Sou Desenvolvedor</h3>
+                <h3 id="souDesenvolvedor"></h3>
+              </div>
+            </div>
+            <div className="row">
               <hr />
             </div>
             <div className="">

@@ -1,6 +1,6 @@
 let resumeData = {
     // "imagebaseurl":"https://AirtonDomiciano.github.io/",
-    "name": "Airton Domiciano",
+    "name": "Airton Evandro Domiciano",
     "role": "Sou um programador que gosta de ter novas experiências!",
     "linkedinId":"Your LinkedIn Id",
     "skypeid": "Your skypeid",
@@ -19,26 +19,28 @@ let resumeData = {
       ],
     "aboutme": [
       {
-        "title":"Sobre Mim",
-        "context": "Meu nome é Airton Evandro Domiciano, sou de Pato Branco - PR, estou com 26 anos.",
-        "context2": ""
+        "title":"Sobre:",
+        "context": "Olá! Sou Airton Evandro Domiciano.",
+        "resume": "Desenvolvedor a mais de 5 anos com foco no desenvolvimento Web com frameworks modernos."
       },
       {
-        "title":"Expêriencias",
-        "context": "Tenho expêriencia em sistemas ERPS e ."
+        "title":"O que eu faço ?",
+        "context": "Sou um desenvolvedor de sistemas ERP e Single-page application.",
+        "resume": "Tenho um grande conhecimento em html-5,css3, sass, JavaScript, Node.js, Angular, React js",
+        "icons": ""
       },
       {
-        "title":"Futuro",
-        "context": "Quero me destacar e ser um ótimo programador dentro de uma empresa."
+        "title":"Futuro:",
+        "context": "Quero me destacar e ser um ótimo programador visando ter conhecimento e experiência para ter um futuro próspero."
       },
       {
-        "title":"Vida",
-        "context": "Atualmente sou casado com uma mulher incrivel que sempre me levou aditante temos um filho de cabelos loiros e muito intêligente.",
+        "title":"Vida:",
+        "context": "Atualmente sou casado tenho um filho.",
         "resume": "Moramos em Pato Branco em uma casa mais afastada da cidade. Assim podemos ter o nosso cantinho sossegado "
       },
       {
-        "title":"Lazer",
-        "context": "Gosto de jogar video game com meu filho sair com a familia."
+        "title":"Lazer:",
+        "context": "Livros, jogos tocar violão e estar com minha familia."
       },
     ],
     "roleDescription": "amo ter a possibilidade de encarar novos desafios no rumo da programação.",
